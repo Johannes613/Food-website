@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.light-theme{
+    --primary-color: black;
+    --secondary-color: white;  
+}
+.dark-theme{
+    --primary-color: white;
+    --secondary-color: black;
+}
+body{
+    min-height: 100vh;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 55px;
+    box-shadow: 0 3px 5px rgb(0,0,0,0.25);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--secondary-color);
+}
+
+header img#logo{
+    width:95px;
+    height: 80%;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul li{
+    list-style: none;
+    padding: 20px 2vw;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: all 0.1s ease;
+}
+nav ul li img{
+    display: block;
+    width: 20px;
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    color:#f5bb27;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #fac031;
+
+}
+div.icons i{
+    color: var(--primary-color);
+}
+div.icons i:hover{
+    color: #fac031;
+}
+
+article#home{
+    display: flex;
+    padding: 80px 30px 50px 90px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+section.intro h1{
+    font-size: 60px;
+    width: 450px;
+
+}
+h1 span{
+    font-family: mv boli;
+    color: #fac031;
+
+}
+section.intro p{
+    line-height: 1.5rem;
+    margin: 20px 0;
+    padding: 20px 40px 0 0;
+    text-align: justify;
+}
+section.food-image img{
+    height: 80vh;
+}
+.order-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fac031;
+    color: var(--secondary-color);
+    margin-top: 50px;
+    text-decoration: none;
+    
+}
+
+
+article#about{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    padding: 80px 30px 0 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+section.info p{
+    line-height: 1.5rem;
+    margin: 20px 0;
+    padding: 20px 40px 0 0;
+    text-align: justify;
+}
+section.info h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+article#menu{
+    padding: 60px 0;
+}
+article#menu h1.head{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+article#menu h1 span{
+    display: inline-block;
+    padding-bottom: 0;
+    border-bottom: 2px solid #fac031;
+    
+}
+section.menu-list{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+div.menu{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    padding: 10px;
+    box-shadow: 0 3px 7px rgb(0,0,0,0.2);
+    align-items: center;
+    gap: 10px;
+    height: 430px; 
+    margin-bottom: 30px; 
+}
+div.menu img{
+    width: 100%;
+}
+div.menu p{
+    text-align: center;
+}
+div.menu h1.food-name{
+    color: #fac031;
+    
+}
+div.menu h2.price{
+    font-size: 1.4rem;
+}
+div.menu a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+
+}
+div.menu img{
+    height: 50%;
+}
+div.menu div.rate{
+    color: #fac031;
+}
+article#gallary{
+    padding-top: 60px;
+}
+
+article#gallary h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+   
+}
+article#gallary h1 span{
+    display: inline-block;
+    padding-bottom: 0;
+    border-bottom: 2px solid #fac031;
+
+}
+div.image-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+div.image-list img{
+    display: block;
+    width: 30%;
+
+}
+div.image-list img:hover{
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+
+/*for order*/
+article#order{
+    padding-top: 60px;
+    /* background: url(Food-website-images/bg2.jpg); */
+}
+
+article#order h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+   
+}
+article#order h1 span{
+    display: inline-block;
+    padding-bottom: 0;
+    border-bottom: 2px solid #fac031;
+
+}
+section.order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 180px;
+}
+section.order img{
+    width: 50%;
+    height: 80vh;
+}
+div.prompts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+div.prompts div{
+    width: 35%;
+}
+div.prompts div input{
+    width: 100%;
+    padding: 6px;
+    /* border: 2px solid #c1c1c1; */
+    border: none;
+    border-radius: 5px;
+    background-color: #e9e8e8;
+    outline-color: #fac031;
+}
+div.btn {
+    margin: 0 100px;
+   
+    
+}
+footer{
+    position: absolute;
+
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    background-color: var(--secondary-color);
+    padding: 25px;
+}
+
+
+
